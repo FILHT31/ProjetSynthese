@@ -1,0 +1,81 @@
+Bouton Main
+
+ajouter intervenant - pushButton_ajouter_intervenant - > ouvre une boite de dialogue ou on peut choisir si medecin ou infirmière Erreur : Cet intervenant existe déjà - label_intervenant_existe_erreur
+
+Bouton liste_view patient
+
+quitter -
+
+Bouton liste_view rendez-vous
+
+quitter -
+
+
+PATIENT
+
+Nom : DialogPatient
+
+nom_patient - lineEdit_nom_patient - label_nom_patient ### Erreur : Veuillez entrer un nom valide (ex : 1234) - label_nom_patient_erreur
+num_patient - lineEdit_num_patient - label_num_patient ### Erreur : Veuillez entrer un num valide - label_num_patient_erreur
+age_patient - lineEdit_age_patient - label_age_patient ### Erreur : Veuillez entrer un age valide (0> et <105) - label_age_patient_erreur
+raison_rdv - lineEdit_raison_rdv - label_raison_rdv
+textBrowser_patient
+pushButton_ajouter_patient ### Erreur : Ce patient existe déjà - label_patient_existe_erreur
+pushButton_serialiser_patient
+pushButton_deserialiser_patient
+pushButton_voir_liste_patient
+pushButton_modifier_patient
+
+RENDEZ-VOUS
+
+Nom : DialogRdv
+
+num_rdv - lineEdit_num_rdv - label_num_rdv ### Erreur : Veuillez entrer un num de rendez-vous valide (ex : A123) - label_num_rdv_erreur
+annee_rdv - lineEdit_annee_rdv - label_annee_rdv ### Erreur : Veuillez entrer une année valide (Entre 2010 et 2022) - label_annee_rdv_erreur
+mois_rdv - comboBox_mois_rdv - label_mois_rdv               
+jour_rdv - lineEdit_jour_rdv - label_jour_rdv ### Erreur : Veuillez entrer un jour valide (De 1 à 31) - label_jour_rdv_erreur
+heure_rdv - lineEdit_heure_rdv - label_heure_rdv ### Erreur : Veuillez entrer une heure valide (De 1 à 24) - label_heure_rdv_erreur
+textBrowser_rdv
+pushButton_creer_rdv ### Erreur : Ce rendez-vous existe déjà - label_rdv_existe_erreur
+pushButton_voir_liste_rdv
+pushButton_quitter_rdv
+
+
+Intervenant
+
+Nom : DialogIntervenant
+
+nom_intervenant - lineEdit_nom_intervenant - label_nom_intervenant ### Erreur : Veuillez entrer un nom valide - label_nom_intervenant_erreur
+annee_exp - lineEdit_annee_exp - label_annee_exp ### Erreur : Veuillez entrer un nombre d'années valide (<50) - label_annee_exp_erreur
+textBrowser_intervenant
+pushButton_supprimer_intervenant
+pushButton_modifier_intervenant
+pushButton_quitter_intervenant
+
+Infirmière
+
+num_inf - lineEdit_num_inf - label_num_inf ### Erreur : Veuillez entrer un num d'infirmière valide - label_num_infirmiere_erreur
+quart_travail - comboBox_quart_travail - label_quart_travail          
+tache_inf - lineEdit_tache_inf - label_tache_inf ### Erreur : Veuillez entrer une tache valide - label_tache_inf_erreur
+pushButton_ajouter_infirmiere
+
+Médecin
+
+specialite - comboBox_specialite_med - label_specialite_med
+num_med - lineEdit_num_med - label_num_med ### Erreur : Veuillez entrer un numéro de médecin valide (ex : 31) - label_num_med_erreur
+pushButton_ajouter_medecin
+
+
+
+
+BUT : AJOUTER PATIENT -> PLANIFIER UN RDV POUR LE PATIENT
+
+BOUTONS DANS LE MAIN
+
+pushButton_main_patient
+pushButton_main_rdv
+pushButton_main_intervenant
+pushButton_quitter_main
+
+
+Héritage -> mettre attributs communs et mettre séparateurs pour medecin et infirmière

@@ -123,7 +123,7 @@ class Patient:
     def serialiser_patient(self, p_fichier_info_patient):
         """
            Méthode permettant de sérialiser un objet de la classe Patient
-           :param p_fichier_info_patient : Le nom du fichier qui contiendra l'objet sérialisé
+           :param p_fichier_info_patient : Le nom du fichier qui contiendra l'objet sérialisé        #Code inspiré de l'exercice de la classe Étudiant
            :return: retourne 0 si le fichier est ouvert et les informations y sont écrites,
                        1 s'il y a erreur d'écriture et 2 s'il y a erreur d'ouverture
 
