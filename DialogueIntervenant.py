@@ -1,3 +1,12 @@
+####################################################################################
+###  420-2G2 - Programmation orientée objet
+###  Travail: Projet Synthèse (Clinique)
+###  Nom: Félix Hotte-Tranchemontagne
+###  No étudiant: 2134152
+###  No Groupe: 002
+###  Description du fichier: Code pour l'interface graphique du bouton intervenant
+####################################################################################
+
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'DialogueIntervenant.ui'

@@ -1,16 +1,3 @@
-Bouton Main
-
-ajouter intervenant - pushButton_ajouter_intervenant - > ouvre une boite de dialogue ou on peut choisir si medecin ou infirmière Erreur : Cet intervenant existe déjà - label_intervenant_existe_erreur
-
-Bouton liste_view patient
-
-quitter -
-
-Bouton liste_view rendez-vous
-
-quitter -
-
-
 PATIENT
 
 Nom : DialogPatient
@@ -25,6 +12,15 @@ pushButton_serialiser_patient
 pushButton_deserialiser_patient
 pushButton_voir_liste_patient
 pushButton_modifier_patient
+pushButton_supprimer_patient
+pushButton_quitter_patient
+
+DialogLsPatient
+
+label_liste_patient
+listView_liste_patient
+pushButton_quitter_liste_patient
+
 
 RENDEZ-VOUS
 
@@ -39,6 +35,11 @@ textBrowser_rdv
 pushButton_creer_rdv ### Erreur : Ce rendez-vous existe déjà - label_rdv_existe_erreur
 pushButton_voir_liste_rdv
 pushButton_quitter_rdv
+
+DialogLsRdv
+label_liste_rdv
+listView_liste_rdv
+pushButton_quitter_liste_rdv
 
 
 Intervenant
@@ -65,12 +66,9 @@ specialite - comboBox_specialite_med - label_specialite_med
 num_med - lineEdit_num_med - label_num_med ### Erreur : Veuillez entrer un numéro de médecin valide (ex : 31) - label_num_med_erreur
 pushButton_ajouter_medecin
 
+Main
 
-
-
-BUT : AJOUTER PATIENT -> PLANIFIER UN RDV POUR LE PATIENT
-
-BOUTONS DANS LE MAIN
+Nom : CliniqueMain
 
 pushButton_main_patient
 pushButton_main_rdv
@@ -78,4 +76,4 @@ pushButton_main_intervenant
 pushButton_quitter_main
 
 
-Héritage -> mettre attributs communs et mettre séparateurs pour medecin et infirmière
+
